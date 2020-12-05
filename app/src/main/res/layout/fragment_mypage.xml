@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp"
+    tools:context=".MypageFragment">
+
+    <TextView
+        android:id="@+id/mypage_title_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="누구나 무료배송"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mypage_login_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/mypage_title_message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="에이블리 회원이라면"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_title_message2"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_title_message2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mypage_title_message2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mypage_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        app:layout_constraintBottom_toBottomOf="@+id/mypage_signup_btn"
+        app:layout_constraintEnd_toStartOf="@+id/mypage_signup_btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mypage_title_message2" />
+
+    <Button
+        android:id="@+id/mypage_signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="회원가입"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <LinearLayout
+        android:id="@+id/mypage_ad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_signup_btn"
+        app:layout_constraintWidth_percent="1"
+        android:background="@drawable/round_coner">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_nav_market" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="에이블리 회원만의 더 큰 혜택을 알아볼까요?"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="정보"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_ad" />
+
+    <LinearLayout
+        android:id="@+id/mypage_linear_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_linear_item2"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_linear_item2"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_nav_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객센터"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mypage_linear_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_linear_item4"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_linear_item4"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_linear_item2">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_nav_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보 수집 및 이용"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mypage_linear_item5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_linear_item6"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_linear_item6"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_linear_item4">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_nav_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오픈라이선스"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mypage_linear_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_linear_item3"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_linear_item3"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_linear_item1">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_nav_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공지사항"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mypage_linear_item6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_linear_item5">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_nav_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버전정보"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:text="2.21.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mypage_linear_item4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_linear_item5"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_linear_item5"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_linear_item3">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_nav_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 이용약관"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

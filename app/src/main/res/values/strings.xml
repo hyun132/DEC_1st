@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DEC02</string>
+    <string name="splash_title">A B L Y</string>
+    <string name="splash_subtitle">셀럽마켓 전 상품 <b>무료배송</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

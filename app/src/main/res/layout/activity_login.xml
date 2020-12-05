@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="24dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/login_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일 입력"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_email_et" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="로그인"
+        app:layout_constraintTop_toBottomOf="@id/login_password_et" />
+
+
+    <TextView
+        android:id="@+id/find_pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider_line"
+        app:layout_constraintTop_toTopOf="@+id/divider_line"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/find_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="아이디 찾기"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider_line"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_btn" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="1dp"
+        android:layout_height="14dp"
+        android:backgroundTint="#e3e3e3"
+        app:layout_constraintBottom_toBottomOf="@+id/find_id_tv"
+        app:layout_constraintEnd_toStartOf="@+id/find_pw_tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/find_id_tv"
+        app:layout_constraintTop_toTopOf="@+id/find_id_tv"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/social_login_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소설 계정으로 에이블리를 이용해보세요"
+        app:layout_constraintBottom_toTopOf="@+id/social_login_naver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_line"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <ImageButton
+        android:id="@+id/social_login_facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/social_login_naver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/social_login_naver"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageButton
+        android:id="@+id/social_login_naver"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/social_login_kakao"
+        app:layout_constraintEnd_toStartOf="@+id/social_login_kakao"
+        app:layout_constraintStart_toEndOf="@+id/social_login_facebook"
+        app:layout_constraintTop_toTopOf="@+id/social_login_kakao" />
+
+    <ImageButton
+        android:id="@+id/social_login_kakao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이메일로 가입하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#fff"
+        android:elevation="0dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

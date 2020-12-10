@@ -3,24 +3,22 @@ package com.example.dec02
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import com.example.dec02.homeNavComponent.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.search_toobar_layout.*
 import kotlinx.android.synthetic.main.splash.*
-import kotlin.coroutines.suspendCoroutine
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.splash)
-        supportActionBar?.hide()
         val splash_anim = AnimationUtils.loadAnimation(this, R.anim.splash_slide_up)
 
         main_title.startAnimation(splash_anim)
@@ -33,11 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             setContentView(R.layout.activity_main)
-            supportActionBar?.show()
             replaceFragment(HomeFragment())
             home_bottom_nav.setOnNavigationItemSelectedListener(bottomNavigationItemSelectedListener)
         }, 4000)
-
 
     }
 

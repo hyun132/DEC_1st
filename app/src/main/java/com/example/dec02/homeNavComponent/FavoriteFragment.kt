@@ -1,4 +1,4 @@
-package com.example.dec02.home
+package com.example.dec02.homeNavComponent
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,19 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.dec02.R
 
-class TodayFragment : Fragment() {
-
+class FavoriteFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_today, container, false)
+        return inflater.inflate(R.layout.fragment_favorite,container,false)
     }
-
 }

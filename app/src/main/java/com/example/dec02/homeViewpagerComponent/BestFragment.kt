@@ -1,4 +1,4 @@
-package com.example.dec02.home
+package com.example.dec02.homeViewpagerComponent
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

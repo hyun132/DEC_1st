@@ -1,4 +1,4 @@
-package com.example.dec02
+package com.example.dec02.homeNavComponent
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_login.view.*
+import com.example.dec02.LoginActivity
+import com.example.dec02.R
 
 class MypageFragment : Fragment() {
 

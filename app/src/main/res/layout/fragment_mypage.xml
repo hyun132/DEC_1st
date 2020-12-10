@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:padding="20dp"
-    tools:context=".MypageFragment">
+    android:padding="19dp"
+    tools:context=".homeNavComponent.MypageFragment">
 
     <TextView
         android:id="@+id/mypage_title_message2"
@@ -38,6 +38,8 @@
         android:id="@+id/mypage_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_corner"
         android:text="로그인"
         app:layout_constraintBottom_toBottomOf="@+id/mypage_signup_btn"
         app:layout_constraintEnd_toStartOf="@+id/mypage_signup_btn"
@@ -51,7 +53,8 @@
         android:layout_marginEnd="4dp"
         android:text="회원가입"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="22dp" />
+        tools:layout_editor_absoluteY="22dp"
+        android:background="@drawable/round_corner"/>
 
     <LinearLayout
         android:id="@+id/mypage_ad"
@@ -68,7 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_signup_btn"
         app:layout_constraintWidth_percent="1"
-        android:background="@drawable/round_coner">
+        android:background="@drawable/round_corner">
 
         <ImageView
             android:layout_width="30dp"
@@ -100,7 +103,7 @@
         android:id="@+id/mypage_linear_item1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="4dp"
@@ -118,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="고객센터"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -206,7 +209,6 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -222,15 +224,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="버전정보"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="12sp"
-            android:text="2.21.0" />
+            android:text="2.21.0"
+            android:textSize="12sp" />
 
     </LinearLayout>
 

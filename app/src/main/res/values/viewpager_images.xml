@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string-array name="image_urls_array">
+        <item>https://file.mk.co.kr/mkde_7/N0/2019/10/20191015_4262230_1571105693.jpg</item>
+        <item>https://cdn.pixabay.com/photo/2020/04/24/08/57/street-5085971__340.jpg</item>
+        <item>"https://cdn.pixabay.com/photo/2020/03/11/01/53/landscape-4920705__340.jpg"</item>
+        <item>"https://cdn.pixabay.com/photo/2020/02/11/12/07/portofino-4839356__340.jpg"</item>
+    </string-array>
+</resources>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<resources>-->
+    <!--    <string-array name="image_urls_array">-->
+    <!--        <item>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKSVd4ApihqtgYOCMnW9qGLPS52HEWoUwcA&usqp=CAU</item>-->
+    <!--        <item>https://img.a-bly.com/og_image.jpg</item>-->
+    <!--        <item>https://www.econonews.co.kr/news/photo/201812/45749_40247_1811.png</item>-->
+    <!--        <item>https://is2-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/29/fc/37/29fc3785-9656-675e-29f6-bc6e3225fd6a/3808b055-52ab-4baa-ba14-16c29a14ee8e_ios_02.png/950x950bb.png</item>-->
+    <!--    </string-array>-->
+
+
+    <!--</resources>-->

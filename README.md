@@ -2,10 +2,11 @@
 
 ## 설명
   - ably 앱의 UI 구현해보기.
-  - 쇼핑 api 추가중.
+  - 쇼핑 api, 네이버Oauth 추가중.
   
 ## 사용기술
   - SharedPreferences
+  - retrofit
 
 ## 화면
   <img src="https://user-images.githubusercontent.com/46836642/103177629-8f982b80-48bf-11eb-81eb-98b9c9a10278.png"  width="200" height="370">

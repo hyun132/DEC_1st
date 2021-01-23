@@ -2,7 +2,8 @@
 
 ## 설명
   - ably 앱의 UI 구현해보기.
-  - 쇼핑 api, 네이버Oauth 추가중.
+  - naver쇼핑 api
+  - 네이버Oauth 추가중.
   
 ## 사용기술
   - SharedPreferences
